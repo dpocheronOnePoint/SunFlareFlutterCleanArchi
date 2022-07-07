@@ -11,6 +11,8 @@ class NasaService {
   );
 
   Future<List<GeoStormDTO>> getGeoStorms(DateTime from, DateTime to) async {
+    print('${DateFormat('yyyy-MM-dd').format(from)}');
+    print('${DateFormat('yyyy-MM-dd').format(to)}');
     final response = await _dio.get(
       '/DONKI/WS/get/GST',
       queryParameters: {

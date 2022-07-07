@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sun_flare_clean_archi/presentation/home.dart';
+import 'package:sun_flare_clean_archi/application/dependencies/home_module.dart';
 
 class Application extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class Application extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: Home(),
+      home: Home(homeState: HomeModule.homeState()),
     );
   }
 }

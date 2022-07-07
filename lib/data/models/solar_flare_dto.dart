@@ -13,7 +13,7 @@ class SolarFlareDTO {
         startTime = DateTime.parse(map['beginTime']),
         endTime =
             map['endTime'] != null ? DateTime.parse(map['endTime']) : null,
-        classType = map['classTime'],
+        classType = map['classType'],
         sourceLocation = map['sourceLocation'],
         link = map['link'];
 }
