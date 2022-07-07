@@ -17,3 +17,13 @@ class SolarFlareDTO {
         sourceLocation = map['sourceLocation'],
         link = map['link'];
 }
+
+extension SolarFlareMapper on SolarFlareDTO {
+  SolarFlare toModel() {
+    return SolarFlare(
+        flrId: flrID,
+        startTime: startTime,
+        classType: classType,
+        sourceLocation: sourceLocation);
+  }
+}
