@@ -8,3 +8,6 @@ class SolarActivities {
 
   SolarActivities({required this.lastFlare, required this.lastStorm});
 }
+
+final initialSolarActivities =
+    SolarActivities(lastFlare: initialSolarFlare, lastStorm: initialGeoStorm);

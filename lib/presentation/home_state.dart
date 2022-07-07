@@ -1,4 +1,6 @@
 import 'package:mobx/mobx.dart';
+import 'package:sun_flare_clean_archi/domain/entities/geo_storm.dart';
+import 'package:sun_flare_clean_archi/domain/entities/solar_flare.dart';
 import 'package:sun_flare_clean_archi/domain/usecases/solar_activities_usecase.dart';
 import 'package:sun_flare_clean_archi/domain/entities/solar_activities.dart';
 
@@ -14,7 +16,7 @@ abstract class HomeStateBase with Store {
   final SolarActivitiesUseCase _useCase;
 
   @observable
-  SolarActivities solarActivities;
+  SolarActivities solarActivities = initialSolarActivities;
 
   @observable
   bool isLoading = false;

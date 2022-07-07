@@ -6,3 +6,5 @@ class GeoStorm {
 
   GeoStorm({required this.gstId, required this.startTime});
 }
+
+final initialGeoStorm = GeoStorm(gstId: '', startTime: DateTime.now());

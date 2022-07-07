@@ -14,3 +14,6 @@ class SolarFlare {
       required this.classType,
       required this.sourceLocation});
 }
+
+final initialSolarFlare = SolarFlare(
+    flrId: '', startTime: DateTime.now(), classType: '', sourceLocation: '');
